@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <table>
+                <tr> <!--Isso são linhas criadas da TABELA-->
+                    <td colspan="4"> <!--Isso são células. COLSPAN é um atributo que especifica o número de colunas que uma célula de uma tabela deve ocupar. SE USA COLSPAN PARA A TAG TABLE-->
+                        <input type="text" id="display" readonly> <!--É um ATRIBUTO que indica que um campo é somente leitura, ou seja o usuário só pode ler e não pode alterar o conteúdo!-->
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><button class="calculatorButtons" id="cleanDisplay" value="C">C</button></td>
+                    <td><button class="calculatorButtons" id="deleteDigit" value="CE">CE</td>
+                    <td><button class="calculatorButtons" id="division" value="/">&divide;</td>
+                    <td><button class="calculatorButtons" id="multiplication" value="*">&times;</td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num7" value="7">7</button></td>
+                    <td><button class="calculatorButtons" id="num8" value="8">8</button></td>
+                    <td><button class="calculatorButtons" id="num9" value="9">9</button></td>
+                    <td><button class="calculatorButtons" id="subtraction" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num4" value="4">4</button></td>
+                    <td><button class="calculatorButtons" id="num5" value="5">5</button></td>
+                    <td><button class="calculatorButtons" id="num6" value="6">6</button></td>
+                    <td><button class="calculatorButtons" id="sum" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="calculatorButtons" id="num1" value="1">1</td>
+                    <td><button class="calculatorButtons" id="num2" value="2">2</td>
+                    <td><button class="calculatorButtons" id="num3" value="3">3</td>
+                    <td rowspan="2"><button class="calculatorButtons" id="result" value="=">=</td> <!--ROWSPAN é um atributo que especifica o número de linhas que uma célula deve ocupar, fundindo-as na mesma coluna. Meio que ele mescla-->
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="calculatorButtons" id="num0" value="0">0</td>
+                    <td><button class="calculatorButtons" id="point" value=".">.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
