@@ -47,6 +47,10 @@
     box-shadow: 0 2px #cac5b6;
 }
 
+.calculatorButtons:hover {
+    cursor: pointer;
+}
+
 #cleanDisplay, #deleteDigit, #division, #multiplication, #subtraction, #sum, #result {
     background-color: #928686;
     color: #fdfffc;
